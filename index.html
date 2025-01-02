@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nosyra Digital - Digital Design Agency</title>
+    <link rel="stylesheet" href="tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@heroicons/react@1.0.6/outline/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+
+
+</head>
+
+<body class="bg-white text-gray-900">
+
+
+    <header class="bg-white shadow-md relative z-50">
+        <div class="container mx-auto px-4 py-4 flex  justify-between">
+            <!-- Logo -->
+            <a href="/" class="text-2xl font-bold text-green-600"> <img src="/img/nosyra digital logo.png" width="200"
+                    height="300"></a>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden  md:flex  ml-auto text-gray-900 flex space-x-4">
+                <a href="#services" class="hover:underline ">About</a>
+                <a href="#portfolio" class="hover:underline "> Services</a>
+                <a href="#about" class="hover:underline ">Portfolio</a>
+                <a href="#faq" class="hover:underline ">FAQ</a>
+                <a href="#contact" class="hover:underline ">Contact</a>
+            </nav>
+
+            <button
+                class=" text-white px-4 py-2 rounded-lg shadow-md bg-gradient-to-r from-green-500 to-blue-500 hidden md:flex ml-auto">
+                <a href="#contact"> Get started</a>
+
+            </button>
+
+
+
+            <!-- Toggle Button -->
+            <button id="menu-toggle" class="md:hidden text-green-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu"
+            class="hidden md:hidden absolute top-16 left-0 w-full bg-gradient-to-r from-green-500 to-blue-500 px-4 py-6 z-50 shadow-lg text-white transition-transform duration-300 ease-in-out">
+            <a href="#about"
+                class="block py-2 px-4 rounded-md hover:bg-white hover:text-green-500 transition duration-300">
+                About
+            </a>
+            <a href="#services"
+                class="block py-2 px-4 rounded-md hover:bg-white hover:text-green-500 transition duration-300">
+                Services
+            </a>
+            <a href="#portfolio"
+                class="block py-2 px-4 rounded-md hover:bg-white hover:text-green-500 transition duration-300">
+                Portfolio
+            </a>
+            <a href="#faq"
+                class="block py-2 px-4 rounded-md hover:bg-white hover:text-green-500 transition duration-300">
+                FAQ
+            </a>
+            <a href="#contact"
+                class="block py-2 px-4 rounded-md hover:bg-white hover:text-green-500 transition duration-300">
+                Contact
+            </a>
+
+        </nav>
+
+
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+    <!-- Mobile Menu (below navbar) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-800 text-white py-4">
+        <ul class="flex flex-col items-center space-y-4">
+            <li><a href="#services" class="hover:underline text-white">Services</a></li>
+            <li><a href="#portfolio" class="hover:underline text-white">Portfolio</a></li>
+            <li><a href="#about" class="hover:underline text-white">About</a></li>
+            <li><a href="#faq" class="hover:underline text-white">FAQ</a></li>
+            <li><a href="#contact" class="hover:underline text-white">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="container mx-auto py-16 px-6 gap-12 md:flex items-center relative">
+        <!-- Text Section -->
+        <div class="md:w-1/2">
+            <!-- Rating Section -->
+            <div class="flex items-center mb-6">
+                <div class="flex -space-x-2">
+                    <img src="img/face1.jpeg" alt="Face 1" class="w-8 h-8 rounded-full border-2 border-white">
+                    <img src="img/face2.jpeg" alt="Face 2" class="w-8 h-8 rounded-full border-2 border-white">
+                    <img src="img/face3.jpeg" alt="Face 3" class="w-8 h-8 rounded-full border-2 border-white">
+                </div>
+                <div class="ml-4 flex items-center text-yellow-500">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M10 15l-5.878 3.09L5.84 12.09.879 7.91 6.5 7l3.5-7 3.5 7 5.621.91-4.961 4.18 1.718 5.91L10 15z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M10 15l-5.878 3.09L5.84 12.09.879 7.91 6.5 7l3.5-7 3.5 7 5.621.91-4.961 4.18 1.718 5.91L10 15z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M10 15l-5.878 3.09L5.84 12.09.879 7.91 6.5 7l3.5-7 3.5 7 5.621.91-4.961 4.18 1.718 5.91L10 15z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M10 15l-5.878 3.09L5.84 12.09.879 7.91 6.5 7l3.5-7 3.5 7 5.621.91-4.961 4.18 1.718 5.91L10 15z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M10 15l-5.878 3.09L5.84 12.09.879 7.91 6.5 7l3.5-7 3.5 7 5.621.91-4.961 4.18 1.718 5.91L10 15z">
+                        </path>
+                    </svg>
+                </div>
+                <span class="ml-2 text-gray-600 text-sm">(4.5/5 based on 120 reviews)</span>
+            </div>
+            <!-- Heading and Text -->
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 text-gray-900">
+                Stunning Social Media Designs for Your Brand
+            </h1>
+            <p class="mt-4 text-lg mb-6 text-gray-700">
+                Nosyra Digital specializes in creating banners and posts tailored for small businesses, ensuring your
+                brand
+                shines online.
+            </p>
+            <a href="#services"
+                class="mt-8 inline-block bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-3 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                Explore Services
+            </a>
+        </div>
+        <!-- Image Section -->
+        <div class="md:w-1/2 mt-4 mx-12 md:mt-0 relative">
+            <img src="img/heroo.png" alt="Hero Image" class="w-full h-auto transition-opacity opacity-0 animate-fadeIn"
+                loading="lazy">
+            <!-- Top-right Card -->
+            <div
+                class="absolute top-4 w-48 right-120 bg-white p-2 mx-8 rounded-lg shadow-lg text-sm flex items-center gap-2">
+                <svg class="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="M15.232 4.232a3 3 0 00-4.243 0L3.586 11.636a1 1 0 00-.293.707v2.828a1 1 0 001 1h2.828a1 1 0 00.707-.293l7.403-7.403a3 3 0 000-4.243zM5 15H4v-1l6.293-6.293 1 1L5 15zm9.707-9.707l-1 1-1-1 1-1a1 1 0 011.414 1.414z">
+                    </path>
+                </svg>
+                <div>
+                    <h3 class="font-bold text-gray-800">Unique Designs</h3>
+                    <p class="text-gray-600"> One-of-a-kind visuals .</p>
+                </div>
+            </div>
+
+            <!-- Bottom-left Card -->
+            <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg text-sm flex items-center gap-2">
+                <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm-2-7a2 2 0 114 0v1a2 2 0 01-4 0v-1zM9 8a1 1 0 112 0v1a1 1 0 11-2 0V8z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                <div>
+                    <h3 class="font-bold text-gray-800">What We Offer</h3>
+                    <p class="text-gray-600">Affordable Pricing</p>
+                </div>
+            </div>
+            <!-- Bottom-right Card -->
+            <div class="absolute bottom-4 right-4 bg-white p-4 rounded-lg shadow-lg text-sm flex items-center gap-2">
+                <svg class="w-6 h-6 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm10 12H5V5h10v10z"></path>
+                    <path fill-rule="evenodd" d="M8 8h4v4H8V8z" clip-rule="evenodd"></path>
+                </svg>
+                <div>
+                    <h3 class="font-bold text-gray-800">Why Choose Us?</h3>
+                    <p class="text-gray-600">Fast Turnaround</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- About Section -->
+    <!-- About Section -->
+    <section id="about" class="container bg-gray-100 mx-auto py-16 px-6 rounded-lg">
+        <div class="md:flex items-center">
+            <div class="md:w-1/2">
+                <img src="img/about.jpeg" width="400" height="500" alt="About Averix" class="rounded-lg shadow-lg">
+            </div>
+            <div class="md:w-1/2 md:pl-5">
+                <div class="mb-4">
+                    <h3 class="text-3xl font-bold mt-6 mb-4 text-gray-900">About Us</h3>
+                    <p class="text-gray-700">
+                        Nosyra Digital is a digital design agency dedicated to helping businesses shine online. We
+                        create
+                        visually stunning banners, posts, and content that resonate with your audience and reflect your
+                        brand’s unique voice.
+                    </p>
+                </div>
+                <div class="mb-4">
+                    <h3 class="text-3xl font-bold mb-4 text-gray-900">Our Mission</h3>
+                    <p class="text-gray-700">
+                        To empower businesses by delivering creative and impactful social media designs that captivate
+                        audiences and enhance brand visibility.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold mb-4 text-gray-900">Our Vision</h3>
+                    <p class="text-gray-700">
+                        To be the leading social media design agency globally, known for crafting innovative, tailored
+                        solutions that help brands thrive in the digital space.
+                    </p>
+                </div>
+                <a href="#contact"
+                    class="mt-6 inline-block bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700">
+                    Work With Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="container mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Our Services</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Service 1 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <div class="text-4xl mb-4 bg-gradient-to-r from-green-500 to-blue-500 text-transparent bg-clip-text">
+                    <i class="fas fa-ad"></i> <!-- Replace with your preferred icon -->
+                </div>
+                <h3 class="text-xl font-semibold mb-4 text-blue-600">Social Media Banners</h3>
+                <p class="text-gray-700">Custom banners for promotions, events, and announcements on platforms like
+                    Facebook, Instagram, and LinkedIn.</p>
+            </div>
+            <!-- Service 2 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <div class="text-4xl mb-4 bg-gradient-to-r from-green-500 to-blue-500 text-transparent bg-clip-text">
+                    <i class="fas fa-share-alt"></i> <!-- Replace with your preferred icon -->
+                </div>
+                <h3 class="text-xl font-semibold mb-4 text-blue-600">Social Media Posts</h3>
+                <p class="text-gray-700">Engaging and visually appealing posts to keep your audience engaged and boost
+                    your online presence.</p>
+            </div>
+            <!-- Service 3 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <div class="text-4xl mb-4 bg-gradient-to-r from-green-500 to-blue-500 text-transparent bg-clip-text">
+                    <i class="fas fa-chart-line"></i> <!-- Replace with your preferred icon -->
+                </div>
+                <h3 class="text-xl font-semibold mb-4 text-blue-600">Analytics & Insights</h3>
+                <p class="text-gray-700">Track performance and gain actionable insights to optimize your social media
+                    strategy.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 ">Our Portfolio</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Portfolio Item 1 -->
+                <div class="bg-white rounded-lg shadow-md p-4"
+                    x-data="{ current: 0, images: ['img/portfolio1.png', 'img/portfolio1.png', 'img/portfolio1.png'] }">
+                    <div class="relative">
+                        <img :src="images[current]" alt="Portfolio 1" class="rounded-lg mb-4 w-full h-auto">
+                        <button @click="current = (current > 0) ? current - 1 : images.length - 1"
+                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">
+                            &#8592;
+                        </button>
+                        <button @click="current = (current < images.length - 1) ? current + 1 : 0"
+                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">
+                            &#8594;
+                        </button>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="bg-white rounded-lg shadow-md p-4"
+                    x-data="{ current: 0, images: ['img/portfolio1.png', 'img/portfolio1.png', 'img/portfolio1.png'] }">
+                    <div class="relative">
+                        <img :src="images[current]" alt="Portfolio 2" class="rounded-lg mb-4 w-full h-auto">
+                        <button @click="current = (current > 0) ? current - 1 : images.length - 1"
+                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">
+                            &#8592;
+                        </button>
+                        <button @click="current = (current < images.length - 1) ? current + 1 : 0"
+                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">
+                            &#8594;
+                        </button>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="bg-white rounded-lg shadow-md p-4"
+                    x-data="{ current: 0, images: ['img/portfolio1.png', 'img/portfolio1.png', 'img/portfolio1.png'] }">
+                    <div class="relative">
+                        <img :src="images[current]" alt="Portfolio 3" class="rounded-lg mb-4 w-full h-auto">
+                        <button @click="current = (current > 0) ? current - 1 : images.length - 1"
+                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">
+                            &#8592;
+                        </button>
+                        <button @click="current = (current < images.length - 1) ? current + 1 : 0"
+                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">
+                            &#8594;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <div class="space-y-4 max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="flex items-center justify-between px-6 py-4 border-b-2 border-gray-200 cursor-pointer"
+                    onclick="toggleAnswer(1)">
+                    <h3 class="font-semibold text-lg text-gray-900">What platforms do you design for?</h3>
+                    <svg id="chevron-1" xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 text-gray-600 transition-transform duration-200 transform" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div id="answer-1" class="hidden px-6 py-4 text-gray-700">
+                    <p>We design for all major social media platforms including Facebook, Instagram, Twitter, and
+                        LinkedIn.</p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="flex items-center justify-between px-6 py-4 border-b-2 border-gray-200 cursor-pointer"
+                    onclick="toggleAnswer(2)">
+                    <h3 class="font-semibold text-lg text-gray-900">How long does it take to get my design?</h3>
+                    <svg id="chevron-2" xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 text-gray-600 transition-transform duration-200 transform" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div id="answer-2" class="hidden px-6 py-4 text-gray-700">
+                    <p>Typically, designs are delivered within 3-5 business days, depending on the complexity of the
+                        project.</p>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="flex items-center justify-between px-6 py-4 border-b-2 border-gray-200 cursor-pointer"
+                    onclick="toggleAnswer(3)">
+                    <h3 class="font-semibold text-lg text-gray-900">Can I request revisions?</h3>
+                    <svg id="chevron-3" xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 text-gray-600 transition-transform duration-200 transform" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div id="answer-3" class="hidden px-6 py-4 text-gray-700">
+                    <p>Yes, we offer up to 3 free revisions for each project to ensure you are satisfied with the final
+                        design.</p>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="flex items-center justify-between px-6 py-4 border-b-2 border-gray-200 cursor-pointer"
+                    onclick="toggleAnswer(4)">
+                    <h3 class="font-semibold text-lg text-gray-900">What file formats will I receive?</h3>
+                    <svg id="chevron-4" xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 text-gray-600 transition-transform duration-200 transform" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div id="answer-4" class="hidden px-6 py-4 text-gray-700">
+                    <p>We deliver designs in high-quality formats such as JPEG, PNG, and editable files like PSD or AI
+                        upon request.</p>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="flex items-center justify-between px-6 py-4 border-b-2 border-gray-200 cursor-pointer"
+                    onclick="toggleAnswer(5)">
+                    <h3 class="font-semibold text-lg text-gray-900">Do you offer discounts for bulk orders?</h3>
+                    <svg id="chevron-5" xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 text-gray-600 transition-transform duration-200 transform" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div id="answer-5" class="hidden px-6 py-4 text-gray-700">
+                    <p>Yes, we offer competitive discounts for bulk orders. Contact us to discuss your specific needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="container  bg-gray-100 mx-auto py-12  px-6 rounded-lg ">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- About and Contact Details -->
+            <div>
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Contact Us</h3>
+                <p class="text-gray-700 mb-6">
+                    We are dedicated to providing top-notch services to meet your needs. Feel free to reach out to us
+                    for
+                    any
+                    inquiries or collaborations.
+                </p>
+
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">Contact Details</h4>
+                <div class="flex items-center mb-4">
+                    <i
+                        class="fas fa-envelope text-gray-700 mr-2 p-2 border-2 border-gray-700 rounded-full bg-gray-200"></i>
+                    <span><strong>Email:</strong> nosyradigital@gmail.com </span>
+                </div>
+
+                <div class="flex items-center mb-4">
+                    <i
+                        class="fas fa-phone text-gray-700 mr-2 p-2 border-2 border-gray-700 rounded-full bg-gray-200"></i>
+                    <span><strong>Phone:</strong> +1 (123) 456-7890</span>
+                </div>
+
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">Follow Us</h4>
+                <div class="flex space-x-6 mb-2">
+                    <a href="https://facebook.com" target="_blank"
+                        class="text-blue-600 hover:underline flex items-center">
+                        <i
+                            class="fab fa-facebook mr-2 p-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white"></i>
+
+                    </a>
+                    <a href="https://twitter.com" target="_blank"
+                        class="text-blue-400 hover:underline flex items-center">
+                        <i
+                            class="fab fa-twitter mr-2 p-2 border-2 border-blue-400 rounded-full bg-blue-400 text-white"></i>
+
+                    </a>
+                    <a href="https://instagram.com" target="_blank"
+                        class="text-pink-500 hover:underline flex items-center">
+                        <i
+                            class="fab fa-instagram mr-2 p-2 border-2 border-pink-500 rounded-full bg-pink-500 text-white"></i>
+
+                    </a>
+
+                </div>
+            </div>
+            <!-- Image -->
+            <div class="flex mx-8">
+                <img src="/img/contact.png" alt="Contact Us" width="500" height="200" class="rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Nosyra Digital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
