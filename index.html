@@ -172,7 +172,7 @@
             </div>
 
             <!-- Bottom-left Card -->
-            <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg text-sm flex items-center gap-2">
+            <div class="hidden md:flex absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg text-sm flex items-center gap-2">
                 <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
                         d="M10 18a8 8 0 100-16 8 8 0 000 16zm-2-7a2 2 0 114 0v1a2 2 0 01-4 0v-1zM9 8a1 1 0 112 0v1a1 1 0 11-2 0V8z"
@@ -284,61 +284,21 @@
             </div>
         </div>
     </section>
-
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="bg-gray-100 py-16">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 ">Our Portfolio</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Portfolio Item 1 -->
-                <div class="bg-white rounded-lg shadow-md p-4"
-                    x-data="{ current: 0, images: ['img/portfolio1.png', 'img/portfolio2.png', 'img/portfolio3.png'] }">
-                    <div class="relative">
-                        <img :src="images[current]" alt="Portfolio 1" class="rounded-lg mb-4 w-full h-auto">
-                        <button @click="current = (current > 0) ? current - 1 : images.length - 1"
-                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">
-                            &#8592;
-                        </button>
-                        <button @click="current = (current < images.length - 1) ? current + 1 : 0"
-                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">
-                            &#8594;
-                        </button>
-                    </div>
-                </div>
-                <!-- Portfolio Item 2 -->
-                <div class="bg-white rounded-lg shadow-md p-4"
-                    x-data="{ current: 0, images: ['img/portfolio4.png', 'img/portfolio5.png', 'img/portfolio1.png'] }">
-                    <div class="relative">
-                        <img :src="images[current]" alt="Portfolio 2" class="rounded-lg mb-4 w-full h-auto">
-                        <button @click="current = (current > 0) ? current - 1 : images.length - 1"
-                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">
-                            &#8592;
-                        </button>
-                        <button @click="current = (current < images.length - 1) ? current + 1 : 0"
-                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">
-                            &#8594;
-                        </button>
-                    </div>
-                </div>
-                <!-- Portfolio Item 3 -->
-                <div class="bg-white rounded-lg shadow-md p-4"
-                    x-data="{ current: 0, images: ['img/portfolio5.png', 'img/portfolio4.png', 'img/portfolio3.png'] }">
-                    <div class="relative">
-                        <img :src="images[current]" alt="Portfolio 3" class="rounded-lg mb-4 w-full h-auto">
-                        <button @click="current = (current > 0) ? current - 1 : images.length - 1"
-                            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">
-                            &#8592;
-                        </button>
-                        <button @click="current = (current < images.length - 1) ? current + 1 : 0"
-                            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">
-                            &#8594;
-                        </button>
-                    </div>
-                </div>
-            </div>
+<!-- Portfolio Section -->
+<section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Our Portfolio</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+        <!-- Portfolio Item 1 -->
+        <img src="/img/portfolio1.png" alt="Portfolio Item 1" class="w-full h-auto rounded shadow-lg">
+        <!-- Portfolio Item 2 -->
+        <img src="/img/portfolio2.png" alt="Portfolio Item 2" class="w-full h-auto rounded shadow-lg">
+        <!-- Portfolio Item 3 -->
+        <img src="/img/portfolio3.png" alt="Portfolio Item 3" class="w-full h-auto rounded shadow-lg">
         </div>
-    </section>
+        </div>
+        </section>
+
 
 
     <!-- FAQ Section -->
